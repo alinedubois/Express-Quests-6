@@ -5,7 +5,7 @@ const express = require("express");
 const app = express();
 
 // We store the port we want to use in a variable
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // We create a get route for '/'
 app.get("/", (request, response) => {
